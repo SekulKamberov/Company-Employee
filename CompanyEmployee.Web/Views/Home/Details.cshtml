@@ -1,0 +1,55 @@
+﻿@model CompanyDetails
+
+<div>
+<div class="panel-body table-responsive col-md-6 col-md-offset-3">
+    <table class="table">
+        <tr>
+            <td colspan="2" align="center" class="info"><b>Company</b></td>
+        </tr>
+        <tr>
+            <td width="35%"><b>Name</b></td>
+            <td width="65%">@Model.Name</td>
+        </tr>
+        <tr>
+            <td><b>Founded</b></td>
+            <td>@Model.Founded.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td><b>Information</b></td>
+            <td>@Model.Information</td>
+        </tr>
+    </table> <br /><br />
+</div> 
+<div class="table-hover col-md-6 col-md-offset-3">
+<b>@Model.Name Employees</b> <br /><br />
+<div class="form-group">
+    @if (Model.Employees != null)
+    {
+        <table class="table col-md-10 info">
+            <thead class="thead-dark">
+                <tr class="info">
+                    <th scope="col">Name</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Starting date</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Vacation days</th>
+                </tr>
+            </thead>
+            @foreach (var employee in Model.Employees)
+            {
+                <tbody>
+                    <tr>
+                        <th>@employee.Name</th>
+                        <td>@employee.Experience</td>
+                        <td>@employee.StartingDate.ToString("dd/MM/yyyy")</td>
+                        <td class="glyphicon glyphicon-euro"> @employee.Salary</td>
+                        <td class="text-center">@employee.VacationDays</td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    }
+</div>
+</div>
+</div>
+   

@@ -1,0 +1,25 @@
+﻿@model CreateCompany
+
+<h1> Add Company</h1><br/><br />
+<form class="col-md-9" method="post">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="form-text text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Founded"></label>
+            <input asp-for="Founded" class="form-control" />
+            <span asp-validation-for="Founded" class="form-text text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Information"></label>
+            <textarea asp-for="Information" class="form-control"></textarea>
+            <span asp-validation-for="Information" class="form-text text-danger"></span>
+        </div>
+        <div>
+            <input type="submit" value="Save Company" class="btn btn-primary btn-md" />
+        </div>
+    </div>
+</form>

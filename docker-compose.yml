@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  companyemployee.api:
+    image: ${DOCKER_REGISTRY}companyemployeeapi
+     ports:
+      - 54411:80
+    build:
+      context: .
+      dockerfile: CompanyEmployee.API\Dockerfile
+
+  companyemployee.web:
+    image: ${DOCKER_REGISTRY}companyemployeeweb
+    environment:
+      - BaseAddress=http://companyemployeeapi/
+    build:
+      context: .
+      dockerfile: CompanyEmployee.Web\Dockerfile
+

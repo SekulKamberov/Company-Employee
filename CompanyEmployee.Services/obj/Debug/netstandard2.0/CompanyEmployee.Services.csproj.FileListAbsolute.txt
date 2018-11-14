@@ -1,0 +1,42 @@
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.deps.json
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.pdb
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.dll
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.pdb
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csprojAssemblyReference.cache
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CoreCompileInputs.cache
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfoInputs.cache
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfo.cs
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CopyComplete
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.pdb
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.dll
+C:\Users\Sekul\source\repos\CompanyEmployee\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.pdb
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.deps.json
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.pdb
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.dll
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.dll
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.pdb
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.pdb
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csprojAssemblyReference.cache
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CoreCompileInputs.cache
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfoInputs.cache
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfo.cs
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CopyComplete
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\Desktop\Test\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.pdb
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.deps.json
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Services.pdb
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.dll
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.dll
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Common.pdb
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\bin\Debug\netstandard2.0\CompanyEmployee.Data.pdb
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csprojAssemblyReference.cache
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CoreCompileInputs.cache
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfoInputs.cache
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.AssemblyInfo.cs
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.csproj.CopyComplete
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.dll
+C:\Users\Sekul\Desktop\Test  with unit testing\CompanyEmployee.Services\obj\Debug\netstandard2.0\CompanyEmployee.Services.pdb

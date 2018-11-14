@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Companies>
+
+<br /> <br />
+<a class="btn btn-primary btn-md" href="/Home/Create/">Create Company</a><br /> <br />
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Company Name</th>
+            <th>Founded</th>
+            <th>Information</th>
+            <th>Modify Company</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var company in Model)
+        {
+            <tr>
+                <td>@company.Name</td>
+                <td>@company.Founded</td>
+                <td>@company.Information</td>
+                <td>
+                    <a class="btn btn-primary btn-md" href="/Employee/Create/@company.Id">Add Employee</a>
+                    <a class="btn btn-success btn-md" href="/Home/Details/@company.Id">Details</a>
+                    <a class="btn btn-warning btn-md" href="/Home/Edit/@company.Id">Edit</a>
+                    <a class="btn btn-danger btn-md" href="/Home/Delete/@company.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

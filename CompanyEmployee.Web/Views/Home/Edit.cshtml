@@ -1,0 +1,66 @@
+﻿@model CompanyDetails
+
+<h2>Modify @Model.Name</h2><br />
+<div class="container-fluid col-md-12">
+    <form class="col-md-4" method="post">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="form-text text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Founded"></label>
+            <input asp-for="Founded" class="form-control" />
+            <span asp-validation-for="Founded" class="form-text text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Information"></label>
+            <textarea asp-for="Information" class="form-control"></textarea>
+            <span asp-validation-for="Information" class="form-text text-danger"></span>
+        </div>
+        <div>
+            <input type="submit" value="Modif Company" class="btn btn-warning btn-md" />
+        </div>
+    </form>
+    <div class="col-md-7 col-md-offset-1 table-hover">
+        <b>Employees</b> 
+        <div class="form-group">
+            @if (Model.Employees != null)
+            {
+                <table class="table col-md-10">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Experience</th>
+                            <th scope="col">Starting date</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Vacation days</th>
+
+                            <th scope="col"> Edit</th>
+                        </tr>
+                    </thead>
+                    @foreach (var employee in Model.Employees)
+                    {
+                        <tbody>
+                            <tr>
+                                <th>@employee.Name</th>
+                                <td>@employee.Experience</td>
+                                <td>@employee.StartingDate.ToString("dd/MM/yyyy")</td>
+                                <td>@employee.Salary</td>
+                                <td>@employee.VacationDays</td>
+                                <td>
+                                    <a asp-controller="Employee"
+                                       asp-action=@(nameof(EmployeeController.Edit))
+                                       asp-route-id="@employee.Id">Edit</a>
+                                    <a asp-controller="Employee"
+                                       asp-action=@(nameof(EmployeeController.Delete))
+                                       asp-route-id="@employee.Id">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            }
+        </div>
+    </div>
+</div>
