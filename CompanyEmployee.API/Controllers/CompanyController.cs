@@ -20,11 +20,15 @@
         }
 
         [HttpGet]
+        [ProducesResponseType(201, Type = typeof(AllCompanyModel))]
+        [ProducesResponseType(404)]
         public async Task<IActionResult> Get()
             => this.OkOrNotFound(await this.companyService.All());
 
         [HttpGet]
         [Route("{id:int:min(1)}")]
+        [ProducesResponseType(201, Type = typeof(CompanyServiceModel))]
+        [ProducesResponseType(404)]
         public async Task<IActionResult> Get(int id)
            => this.OkOrNotFound(await this.companyService.Details(id));
 
@@ -44,6 +48,8 @@
 
         [HttpPost]
         [ValidateModelState]
+        [ProducesResponseType(200, Type = typeof(CompanyRequestModel))]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Post([FromBody]CompanyRequestModel model)
         {
             var categoryNameExists = await this.companyService.Exists(model.Name);
@@ -60,6 +66,8 @@
         [HttpPost]
         [Route(nameof(Put))]
         [ValidateModelState]
+        [ProducesResponseType(200, Type = typeof(CompanyRequestModel))]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Put([FromBody]CompanyRequestModel model)
         {
             var companyExists = await this.companyService.Exists(model.Id);

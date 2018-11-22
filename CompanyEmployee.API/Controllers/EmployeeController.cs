@@ -1,14 +1,17 @@
 ﻿namespace CompanyEmployee.API.Controllers
 {
-    using CompanyEmployee.API.Infrastructure.Extensions;
-    using CompanyEmployee.API.Infrastructure.Filters;
-    using CompanyEmployee.Services.Contracts;
-    using CompanyEmployee.Services.Models;
-    using Microsoft.AspNetCore.Mvc;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using CompanyEmployee.API.Infrastructure.Extensions;
+    using CompanyEmployee.API.Infrastructure.Filters;
+    using CompanyEmployee.Data.Models.Entities;
+    using CompanyEmployee.Services.Contracts;
+    using CompanyEmployee.Services.Models;
 
     public class EmployeeController : BaseApiController
     {
@@ -20,11 +23,15 @@
         }
 
         [Route("ById/{id:int:min(1)}")]
+        [ProducesResponseType(201, Type = typeof(EmployeeFullDetailsModel))]
+        [ProducesResponseType(404)]
         public IActionResult Get(int id)
            => this.OkOrNotFound(this.employeeService.EmployeeById(id));
 
         [HttpGet]
         [Route("{id:int:min(1)}")]
+        [ProducesResponseType(201, Type = typeof(IEnumerable<Employee>))]
+        [ProducesResponseType(404)]
         public async Task<IActionResult> GetEmployees (int id)
          => this.OkOrNotFound(await this.employeeService.EmployeesInCompany(id));
 
@@ -51,6 +58,8 @@
         [HttpPost]
         [Route(nameof(Put))]
         [ValidateModelState]
+        [ProducesResponseType(200, Type = typeof(EmployeeRequestModel))]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Put([FromBody]EmployeeRequestModel model)
         {
             var employeeExists = await this.employeeService.Exists(model.Id);
@@ -64,6 +73,8 @@
 
         [HttpPost]
         [ValidateModelState]
+        [ProducesResponseType(200, Type = typeof(EmployeeRequestModel))]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Post([FromBody]EmployeeRequestModel model)
         {
             await this.employeeService.Create(model);
